@@ -32,7 +32,7 @@ export default {
           return handleModels(apiKey)
             .catch(errHandler);
         default:
-          throw new HttpError("404 Not Found", 404);
+          throw new HttpError("404 Not Found....", 404);
       }
     } catch (err) {
       return errHandler(err);
